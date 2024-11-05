@@ -73,7 +73,7 @@ func main() {
 	}
 
 	pkg := os.Args[1]
-	graph := simple.NewDirectedGraph(0, 0)
+	graph := simple.NewDirectedGraph()
 	visited := make(map[string]struct{})
 
 	buildGraph(pkg, graph, visited)
